@@ -8,7 +8,7 @@ usage() {
 pname=$1
 pdir="./${pname}"
 tname=/home/soham/Desktop/BS/bashbuild.rc/templates
-#tname = /var/bashbuild.rc/templates
+#tname=/var/bashbuild.rc/templates
 
 if [ -z "$pname" ]; then
     usage
@@ -25,7 +25,7 @@ cur="$PWD"
 cd $tname
 echo "Select a template:"
 select x in *; do
-    template = "$x"
+    template="$x"
     break
 done
 
